@@ -11,15 +11,16 @@
 <body>
     <!--Header-->
     <header id="main-header">
-        <h1>Prisma</h1>
+        <!--position of sidenavbar at header-->
+        <h1>Prisma <span class="opennavbar" onclick="openNav()">&#9776;</span> </h1>   
     </header>
 
     <!--Sliding Images-->
     <div class="content section">
-    <img class="mySlides img_center" src="Images/A53_1.jpg">
-    <img class="mySlides img_center" src="Images/Reno3.jpg">
-    <img class="mySlides img_center" src="Images/F15.jpg">
-    <img class="mySlides img_center" src="Images/Reno4pro_1.jpg">
+    <img class="mySlides img_center" src="Images/A53_4.jpg">
+    <img class="mySlides img_center" src="Images/Reno3_2.jpg">
+    <img class="mySlides img_center" src="Images/F15_5.jpg">
+    <img class="mySlides img_center" src="Images/Reno4pro_5.jpg">
     </div>
 
     <script>
@@ -38,6 +39,25 @@
             if (myIndex > x.length) {myIndex = 1}    
             x[myIndex-1].style.display = "block";  
             setTimeout(carousel, 6000); // Change image every 6 seconds
+        }
+    </script>
+
+    <!-- For SideNavbar-->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="aboutus.html" target="_blank">About Us</a>
+        <a href="contactus.html" target="_blank">Contact Us</a>
+    </div>
+    
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px"; //sidenavbar width after opening
+            document.body.style.backgroundColor = " rgb(197, 227, 245)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0"; //sidenavbar width after closing 
+            document.body.style.backgroundColor = "rgb(220, 240, 252)";
         }
     </script>
 
@@ -70,7 +90,6 @@
         <p>Copyright &copy; 2020 Prisma</p>
     </footer> 
 
-    <div style="margin-top: 500px;"></div>
 </body>
 </html>
 
