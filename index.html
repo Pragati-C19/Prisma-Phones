@@ -1,14 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/Style.css">
+    <title>Prisma</title>
 </head>
+
 <body>
-    <h1>Prisma Smartphone</h1>
-    <h4>Small Description</h4>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam fuga velit blanditiis ipsum exercitationem quos vero rerum officiis inventore iusto, consectetur tempora, veritatis quaerat sapiente quia? Omnis recusandae veniam aut!</p>
+    <!--Header-->
+    <header id="main-header">
+        <h1>Prisma</h1>
+    </header>
+
+    <!--Sliding Images-->
+    <div class="content section">
+    <img class="mySlides img_center" src="Images/A53_1.jpg">
+    <img class="mySlides img_center" src="Images/Reno3.jpg">
+    <img class="mySlides img_center" src="Images/F15.jpg">
+    <img class="mySlides img_center" src="Images/Reno4pro_1.jpg">
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() 
+        {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) 
+            {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 6000); // Change image every 6 seconds
+        }
+    </script>
+
+    <!--Three Blocks of Mobile Details-->
+    <div class="block">
+        <div class="polaroid">
+            <img src="Images/Reno10xzoom.jpg" style="width:100%">
+            <div class="container">
+            <p>Prisma F17 Pro</p>
+            </div>
+        </div>
+        
+        <div class="polaroid">
+            <img src="Images/shiny-smartphone.png"style="width:100%">
+            <div class="container">
+            <p>Prisma A53</p>
+            </div>
+        </div>
+
+        <div class="polaroid">
+            <img src="Images/Find X2.jpg"style="width:100%">
+            <div class="container">
+            <p>Prisma Turbo4 Pro</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer id="main-footer">
+        <p>Copyright &copy; 2020 Prisma</p>
+    </footer> 
+
+    <div style="margin-top: 500px;"></div>
 </body>
 </html>
 
