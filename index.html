@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/Style.css">
+    <!--Bootstrap for Slide Show-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Prisma</title>
 </head>
 
@@ -14,33 +18,6 @@
         <!--position of sidenavbar at header-->
         <h1>Prisma <span class="opennavbar" onclick="openNav()">&#9776;</span> </h1>   
     </header>
-
-    <!--Sliding Images-->
-    <div class="content section">
-    <img class="mySlides img_center" src="Images/A53_4.jpg">
-    <img class="mySlides img_center" src="Images/Reno3_2.jpg">
-    <img class="mySlides img_center" src="Images/F15_5.jpg">
-    <img class="mySlides img_center" src="Images/Reno4pro_5.jpg">
-    </div>
-
-    <script>
-        var myIndex = 0;
-        carousel();
-
-        function carousel() 
-        {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) 
-            {
-                x[i].style.display = "none";  
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}    
-            x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 6000); // Change image every 6 seconds
-        }
-    </script>
 
     <!-- For SideNavbar-->
     <div id="mySidenav" class="sidenav">
@@ -61,26 +38,58 @@
         }
     </script>
 
+    <!--Sliding Images-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="Images/A53_4.jpg" alt="Prisma A53" style="width:100%;">
+            </div>
+        
+            <div class="item">
+                <img src="Images/Reno3_2.jpg" alt="Prisma Reno3" style="width:100%;">
+            </div>
+            
+            <div class="item">
+                <img src="Images/F15_5.jpg" alt="Prisma F15" style="width:100%;">
+            </div>
+
+            <div class="item">
+                <img src="Images/Reno4pro_5.jpg" alt="Prisma Reno4pro" style="width:100%;">
+            </div>
+        </div>
+     
+    </div>
+    
+
     <!--Three Blocks of Mobile Details-->
     <div class="block">
         <div class="polaroid">
             <img src="Images/Reno10xzoom.jpg" style="width:100%">
             <div class="container">
-            <p>Prisma F17 Pro</p>
+                <p>Prisma F17 Pro</p>
             </div>
         </div>
         
         <div class="polaroid">
             <img src="Images/shiny-smartphone.png"style="width:100%">
             <div class="container">
-            <p>Prisma A53</p>
+                <p>Prisma A53</p>
             </div>
         </div>
 
         <div class="polaroid">
             <img src="Images/Find X2.jpg"style="width:100%">
             <div class="container">
-            <p>Prisma Turbo4 Pro</p>
+                <p>Prisma Turbo4 Pro</p>
             </div>
         </div>
     </div>
