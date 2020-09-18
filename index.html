@@ -1,104 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./CSS/Style.css">
-    <!--Bootstrap for Slide Show-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Prisma</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./CSS/Style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <title>Prisma</title>
 </head>
-
 <body>
-    <!--Header-->
-    <header id="main-header">
-        <!--position of sidenavbar at header-->
-        <h1>Prisma <span class="opennavbar" onclick="openNav()">&#9776;</span> </h1>   
-    </header>
+  <nav class="navbar navbar-dark bg-dark">
+    <!-- Navbar content -->
+    <!-- Image and text -->
+      <a class="navbar-brand mb-0 h1">
+        <img src="Images/Prisma_logo_9.png" class="d-inline-block align-top logo" alt="">
+          Prisma
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html" target="_blank">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html" target="_blank">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              SmartPhones
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="page1.html" target="_blank">Prisma F17 Pro</a>
+              <a class="dropdown-item" href="page2.html" target="_blank">Prisma A53</a>
+              <a class="dropdown-item" href="page3.html" target="_blank">PrismaMi2 Pro</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html" target="_blank">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
 
-    <!-- For SideNavbar-->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="aboutus.html" target="_blank">About Us</a>
-        <a href="contactus.html" target="_blank">Contact Us</a>
-    </div>
-    
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px"; //sidenavbar width after opening
-            document.body.style.backgroundColor = " rgb(197, 227, 245)";
-        }
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0"; //sidenavbar width after closing 
-            document.body.style.backgroundColor = "rgb(220, 240, 252)";
-        }
-    </script>
 
-    <!--Sliding Images-->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
-    
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="Images/A53_4.jpg" alt="Prisma A53" style="width:100%;">
-            </div>
-        
-            <div class="item">
-                <img src="Images/Reno3_2.jpg" alt="Prisma Reno3" style="width:100%;">
-            </div>
-            
-            <div class="item">
-                <img src="Images/F15_5.jpg" alt="Prisma F15" style="width:100%;">
-            </div>
 
-            <div class="item">
-                <img src="Images/Reno4pro_5.jpg" alt="Prisma Reno4pro" style="width:100%;">
-            </div>
-        </div>
-     
-    </div>
-    
 
-    <!--Three Blocks of Mobile Details-->
-    <div class="block">
-        <div class="polaroid">
-            <img src="Images/Reno10xzoom.jpg" style="width:100%">
-            <div class="container">
-                <p>Prisma F17 Pro</p>
-            </div>
-        </div>
-        
-        <div class="polaroid">
-            <img src="Images/shiny-smartphone.png"style="width:100%">
-            <div class="container">
-                <p>Prisma A53</p>
-            </div>
-        </div>
 
-        <div class="polaroid">
-            <img src="Images/Find X2.jpg"style="width:100%">
-            <div class="container">
-                <p>Prisma Turbo4 Pro</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="https://www.facebook.com/OPPOCareIN"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/oppomobileindia"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/oppomobileindia"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.youtube.com/user/oppomobileindia"><i class="fab fa-instagram"></i></a>
             </div>
-        </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item">
+                    <a href="about-us.html">About Us</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="contact-us.html">Contact Us</a>
+                </li>
+            </ul>
+            <p class="copyright">Copyright &copy; 2020 Prisma</p>
+        </footer>
     </div>
 
-    <!--Footer-->
-    <footer id="main-footer">
-        <p>Copyright &copy; 2020 Prisma</p>
-    </footer> 
-
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
-
