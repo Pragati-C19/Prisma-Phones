@@ -1,157 +1,171 @@
-body{
-    background-color:  rgb(57, 158, 221);
+body {
+	background-color: rgb(57, 158, 221);
 }
 
 /* navbar */
-.d-inline-block{
-    width: 40px;
-    height: 40px;
+.d-inline-block {
+	width: 40px;
+	height: 40px;
 }
-.logo{
-    border-radius: 30%;
+.logo {
+	border-radius: 30%;
 }
+.navbar .navbar-brand {
+	font-weight: 600;
+	color: inherit;
+	font-family: cursive, sans-serif;
+    font-size: 25px;
+}
+  
 
 /* sliding image text 1 */
-.carousel-caption .a1{
-    position: absolute;
-    bottom: 660px;
-    left: 70px;
-    color: rgb(14, 13, 13);
+.carousel-caption .a1 {
+	position: absolute;
+	bottom: 660px;
+	left: 70px;
+	color: rgb(14, 13, 13);
+	font-size: 2.5em;
 }
 .carousel-caption .a2 {
-    position: absolute;
-    bottom: 580px;
-    left: 5px;
-    right: 599px;
-    color: black;
+	position: absolute;
+	bottom: 565px;
+	left: 5px;
+	right: 599px;
+	color: black;
+	font-size: 1.1em;
 }
 
 /* sliding image text 2  */
-.carousel-caption .b1{
-    position: absolute;
-    bottom: 660px;
-    right: 11px;
-    color: rgb(14, 13, 13);
+.carousel-caption .b1 {
+	position: absolute;
+	bottom: 660px;
+	right: 25px;
+	color: rgb(14, 13, 13);
+	font-size: 2.3em;
 }
 .carousel-caption .b2 {
-    position: absolute;
-    bottom: 580px;
-    right: 5px;
-    left: 730px;
-    color: black;
+	position: absolute;
+	bottom: 565px;
+	right: 5px;
+	left: 730px;
+	color: black;
+	font-size: 1.1em;
 }
 
 /* sliding image text 3 */
-.carousel-caption .c1{
-    position: absolute;
-    bottom: 660px;
-    right: 50px;
-    color: rgb(14, 13, 13);
+.carousel-caption .c1 {
+	position: absolute;
+	bottom: 660px;
+	right: 50px;
+	color: rgb(14, 13, 13);
+	font-size: 2.5em;
 }
 .carousel-caption .c2 {
-    position: absolute;
-    bottom: 550px;
-    right: 5px;
-    left: 600px;
-    color: black;
+	position: absolute;
+	bottom: 535px;
+	right: 5px;
+	left: 600px;
+	color: black;
+	font-size: 1.1em;
 }
 
 /* sliding image text 4 */
-.carousel-caption .d1{
-    position: absolute;
-    bottom: 660px;
-    left: 300px;
-    color: rgb(14, 13, 13);
+.carousel-caption .d1 {
+	position: absolute;
+	bottom: 660px;
+	left: 300px;
+	color: rgb(14, 13, 13);
+	font-size: 2.5em;
 }
 .carousel-caption .d2 {
-    position: absolute;
-    bottom: 600px;
-    color: black;
+	position: absolute;
+	bottom: 580px;
+	color: black;
+	font-size: 1.1em;
 }
 
-.card-img-top{
-    background-color: rgb(245, 243, 243);
+.card-img-top {
+	background-color: rgb(245, 243, 243);
 }
-
 
 /* Footer */
 .footer-basic {
-    padding: 40px 0;
-    background-color: rgb(31, 27, 27);
-    color: #cdd1d4;
+	padding: 40px 0;
+	background-color: rgb(31, 27, 27);
+	color: #cdd1d4;
 }
-  
+
 .footer-basic ul {
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.6;
+	margin-bottom: 0;
 }
-  
+
 .footer-basic li {
-    padding: 0 10px;
+	padding: 0 10px;
 }
-  
+
 .footer-basic ul a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
+	color: inherit;
+	text-decoration: none;
+	opacity: 0.8;
 }
-  
+
 .footer-basic ul a:hover {
-    opacity: 1;
+	opacity: 1;
 }
-  
+
 .footer-basic .social {
-    padding-bottom: 25px;
-    text-align: center;
+	padding-bottom: 25px;
+	text-align: center;
 }
-  
+
 .footer-basic .social > a {
-    font-size: 25px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    display: inline-block;
-    border-radius: 50%;
-    border: 1px solid rgb(15, 13, 13);
-    margin: 0 15px;
-    color: inherit;
-    opacity: 0.75;
-    text-align: center;
+	font-size: 25px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	display: inline-block;
+	border-radius: 50%;
+	border: 1px solid rgb(15, 13, 13);
+	margin: 0 15px;
+	color: inherit;
+	opacity: 0.75;
+	text-align: center;
 }
 
 .footer-basic .social > a:hover {
-    opacity: 0.9;
-    transform: scale(1.1);
+	opacity: 0.9;
+	transform: scale(1.1);
 }
-  
+
 .footer-basic .copyright {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
-    margin-bottom: 0;
+	margin-top: 15px;
+	text-align: center;
+	font-size: 13px;
+	color: #aaa;
+	margin-bottom: 0;
 }
-  
+
 .social a:nth-child(1) {
-    background: rgb(153, 146, 146);
-    color: rgb(15, 13, 13);
+	background: rgb(153, 146, 146);
+	color: rgb(15, 13, 13);
 }
-  
+
 .social a:nth-child(2) {
-    background: rgb(153, 146, 146);
-    color: rgb(15, 13, 13);
+	background: rgb(153, 146, 146);
+	color: rgb(15, 13, 13);
 }
-  
+
 .social a:nth-child(3) {
-    background: rgb(153, 146, 146);
-    color: rgb(15, 13, 13);
+	background: rgb(153, 146, 146);
+	color: rgb(15, 13, 13);
 }
 
 .social a:nth-child(4) {
-    background: rgb(153, 146, 146);
-    color: rgb(15, 13, 13);
+	background: rgb(153, 146, 146);
+	color: rgb(15, 13, 13);
 }
