@@ -20,6 +20,38 @@
 			type="image/icon type"
 		/>
 		<title>Contact Us | Prisma</title>
+
+		<!--javascript alert-->
+		<script>
+			function show_alert() {
+				var name = document.myform.txtName.value;
+				var email = document.myform.txtEmail.value;
+				var phn_no = document.myform.txtPhone.value;
+				var msg = document.myform.txtMsg.value;
+
+				if (name == null || name == "") {
+					alert("Please! Enter Your Name...");
+					return false;
+				} else if (email == null || email == "") {
+					alert("Please! Enter Your Email...");
+					return false;
+				} else if (phn_no == null || phn_no == "") {
+					alert("Please! Enter Your Phone Number...");
+					return false;
+				} else if (msg == null || msg == "") {
+					alert("Please! Enter Your Message...");
+					return false;
+				} else {
+					alert(
+						"Thank You for contacting Prisma! \n We Received your Message. We'll contact you as soon as possible."
+					);
+				}
+				//page location after sending message
+				window.location = "#";
+				//refresh page after sending message
+				window.location.reload();
+			}
+		</script>
 	</head>
 	<body>
 		<nav class="navbar navbar-dark bg-dark">
@@ -96,10 +128,12 @@
 
 		<!--view frame-->
 		<div class="container contact-form">
+			<!--contact us icon-->
 			<div class="contact-image">
 				<img src="./images/logo/email (1).png" alt="rocket_contact" />
 			</div>
-			<form method="post">
+			<!--contact us form-->
+			<form name="myform" method="post">
 				<h3>Drop Us a Message</h3>
 				<div class="row">
 					<div class="col-md-6">
@@ -130,12 +164,13 @@
 								value=""
 							/>
 						</div>
-						<div class="form-group">
+						<div>
 							<input
-								type="submit"
+								type="button"
 								name="btnSubmit"
 								class="btnContact"
 								value="Send Message"
+								onclick="show_alert()"
 							/>
 						</div>
 					</div>

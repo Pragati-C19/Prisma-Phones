@@ -37,6 +37,7 @@ body {
 .contact-form .btnContact {
 	width: 50%;
 	border: none;
+	outline: none;
 	border-radius: 1rem;
 	padding: 1.5%;
 	background: #d1049e;
@@ -51,5 +52,6 @@ body {
 	color: #fff;
 	background-color: #0062cc;
 	border: none;
+	outline: none;
 	cursor: pointer;
 }
