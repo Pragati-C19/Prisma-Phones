@@ -42,8 +42,12 @@
 					alert("Please! Enter Your Message...");
 					return false;
 				} else {
+					const obj = {
+						name,email,phn_no,msg
+					}
+					//Printing the Inputs entered by the User
 					alert(
-						"Thank You for contacting Prisma! \n We Received your Message. We'll contact you as soon as possible."
+						`Thank You for contacting Prisma! \n We Received your Message as follows. \n\n${JSON.stringify(obj ,null,4)}\n\n We'll contact you as soon as possible.`
 					);
 				}
 				//page location after sending message
