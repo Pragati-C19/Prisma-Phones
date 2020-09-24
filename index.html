@@ -1,339 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./CSS/Style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="./css/header.css" />
+		<link rel="stylesheet" type="text/css" href="./css/homepage.css" />
+		<link rel="stylesheet" type="text/css" href="./css/footer.css" />
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="icon"
+			href="./images/logo/apple-touch-icon-76x76-precomposed.png"
+			type="image/icon type"
+		/>
+		<title>Prisma</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-dark bg-dark">
+			<!-- Navbar content -->
+			<!-- Image and text -->
+			<a class="navbar-brand mb-0 h1">
+				<img
+					src="./images/logo/Prisma_logo_9.png"
+					class="d-inline-block align-top logo"
+					alt="Prisma Logo"
+				/>
+				Prisma
+			</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="./index.html" target="_blank"
+							>Home <span class="sr-only">(current)</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./about-us.html" target="_blank"
+							>About Us</a
+						>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="navbarDropdownMenuLink"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							SmartPhones</a
+						>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a
+								class="dropdown-item"
+								href="./prisma-f17-pro.html"
+								target="_blank"
+								>Prisma F17 Pro</a
+							>
+							<a class="dropdown-item" href="./prisma-vi5.html" target="_blank"
+								>Prisma Vi5</a
+							>
+							<a
+								class="dropdown-item"
+								href="./prisma-mi2-pro.html"
+								target="_blank"
+								>Prisma Mi2 Pro</a
+							>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./contact-us.html" target="_blank"
+							>Contact Us</a
+						>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
-  <title>Prisma</title>
-</head> 
-<body>
+		<!--Sliding Images-->
+		<div
+			id="carouselExampleIndicators"
+			class="carousel slide"
+			data-ride="carousel"
+		>
+			<!--Indicator lower side small 4 bars-->
+			<ol class="carousel-indicators">
+				<li
+					data-target="#carouselExampleIndicators"
+					data-slide-to="0"
+					class="active"
+				></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+			</ol>
+			<!--sliding Images-->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img
+						class="d-block w-100"
+						src="./images/sliding_imgs/A53_4.jpg"
+						alt="Prisma A53"
+					/>
+					<div class="carousel-caption">
+						<h1 class="a1">Prisma A53</h1>
+						<p class="a2">
+							Faster and Smoother.. With 90HzPunch-Hole Display, 18W Fast
+							Charge, 16MP AI Selfie, 5000mAh Battery.
+						</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img
+						class="d-block w-100"
+						src="./images/sliding_imgs/F15_5.jpg"
+						alt="Prisma F15"
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<h1 class="b1">Prisma F15</h1>
+						<p class="b2">
+							Wide Angle Macro Quad Camera, Play up your perspective.
+						</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img
+						class="d-block w-100"
+						src="./images/sliding_imgs/Reno3_2.jpg"
+						alt="Prisma Reno3"
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<h1 class="c1">Prisma Reno3</h1>
+						<p class="c2">
+							Prisma Reno3 uses the 64MP ultra-clear main camera, 8MP ultra
+							wide-angle lens and 13MP telephoto lens combo to bring high
+							performing results.
+						</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img
+						class="d-block w-100"
+						src="./images/sliding_imgs/Reno4pro_5.jpg"
+						alt="Prisma Reno4pro"
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<h1 class="d1">Prisma Reno4 Pro</h1>
+						<p class="d2">
+							Prisma Reno4 Pro charges to 100% in 36 minutes, as measured in
+							tests conducted by OPPO. The screen refresh rate is changed
+							automatically based on the specific scenario.
+						</p>
+					</div>
+				</div>
+			</div>
+			<a
+				class="carousel-control-prev"
+				href="#carouselExampleIndicators"
+				role="button"
+				data-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a
+				class="carousel-control-next"
+				href="#carouselExampleIndicators"
+				role="button"
+				data-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
 
-    <nav class="navbar navbar-dark bg-dark">
-    <!-- Navbar content -->
-    <!-- Image and text -->
-        <a class="navbar-brand mb-0 h1">
-            <img src="Images/Prisma_logo_9.png" class="d-inline-block align-top logo" alt="">
-            Prisma
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html" target="_blank">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about-us.html" target="_blank">About Us</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    SmartPhones</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="page1.html" target="_blank">Prisma F17 Pro</a>
-                        <a class="dropdown-item" href="page2.html" target="_blank">Prisma Vi5</a>
-                        <a class="dropdown-item" href="page3.html" target="_blank">Prisma Mi2 Pro</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact-us.html" target="_blank">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+		<!--spacing between sliding images and product rack-->
+		<br />
+		<br />
 
+		<!--3 x 2 product rack-->
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="card">
+						<img
+							src="./images/products/m31.png"
+							class="card-img-top"
+							alt="Prisma M31"
+						/>
+						<div class="card-body">
+							<h4 class="card-title">Prisma Enco M31</h4>
+							<p class="card-text">Pure Bass on the Go</p>
+							<a href="#" class="btn btn-primary">Buy Now in &#x20B9; 1,999</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img
+							src="./images/products/power_bank.png"
+							class="card-img-top"
+							alt="Prisma Power Bank"
+						/>
+						<div class="card-body">
+							<h4 class="card-title">Prisma Power Bank</h4>
+							<p class="card-text">Advice you can bank on</p>
+							<a href="#" class="btn btn-primary">Buy Now in &#x20B9; 3,699</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img
+							src="./images/products/w11.png"
+							class="card-img-top"
+							alt="Prisma W11"
+						/>
+						<div class="card-body">
+							<h4 class="card-title">Prisma Enco M31</h4>
+							<p class="card-text">Music Never Drops</p>
+							<a href="#" class="btn btn-primary">Buy Now in &#x20B9; 5,990</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br />
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="card">
+						<img
+							src="./images/products/w31.png"
+							class="card-img-top"
+							alt="Prisma W31"
+						/>
+						<div class="card-body">
+							<h4 class="card-title">Prisma Enco W31</h4>
+							<p class="card-text">Unleash the Power of Music</p>
+							<a href="#" class="btn btn-primary">Buy Now in &#x20B9; 6,799</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img
+							src="./images/products/w51.png"
+							class="card-img-top"
+							alt="Prisma W51"
+						/>
+						<div class="card-body">
+							<h4 class="card-title">Prisma Enco W51</h4>
+							<p class="card-text">A perfect pair for your smartphone</p>
+							<a href="#" class="btn btn-primary">Buy Now in &#x20B9; 4,690</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img
+							src="./images/products/watch.png"
+							class="card-img-top"
+							alt="Prisma watch"
+						/>
+						<div class="card-body">
+							<h4 class="card-title">Prisma Watch</h4>
+							<p class="card-text">The right time for life</p>
+							<a href="#" class="btn btn-primary">Buy Now in &#x20B9; 2,980</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!--Sliding Images-->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <!--Indicator lower side small 4 bars-->
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        </ol>
-        <!--sliding Images-->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="Images/A53_4.jpg" alt="Prisma A53">
-                <div class="carousel-caption">
-                        <h1 class="a1">Prisma A53</h1>
-                        <p class="a2">Faster and Smoother.. With 90HzPunch-Hole Display, 18W Fast Charge, 16MP AI Selfie, 5000mAh Battery.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="Images/F15_5.jpg" alt="Prisma F15">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 class="b1">Prisma F15</h1>
-                    <p class="b2">Wide Angle Macro Quad Camera, Play up your perspective.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="Images/Reno3_2.jpg" alt="Prisma Reno3">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 class="c1">Prisma Reno3</h1>
-                    <p class="c2">Prisma Reno3 uses the 64MP ultra-clear main camera, 8MP ultra wide-angle lens and 13MP telephoto lens combo to bring high performing results.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="Images/Reno4pro_5.jpg" alt="Prisma Reno4pro">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 class="d1">Prisma Reno4 Pro</h1>
-                    <p class="d2">Prisma Reno4 Pro charges to 100% in 36 minutes, as measured in tests conducted by OPPO. The screen refresh rate is changed automatically based on the specific scenario.</p>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
+		<!--Spacing between Product Rack and Newsroom-->
+		<br />
+		<br />
 
-    <!--spacing between sliding images and product rack-->
-    <br>
-    <br>
+		<!--Horizontal NewsRoom-->
+		<div class="container">
+			<div class="card mb-3 w-100">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a
+							href="https://www.oppo.com/in/newsroom/stories/oppo-f15-price-in-india/"
+						>
+							<img
+								src="./images/news_room/Kartik_F15.png"
+								class="card-img"
+								alt="Kartik_F15"
+							/>
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h3 class="card-title">Prisma F15 Review</h3>
+							<p class="card-text">
+								Prisma F15 is a mesmerising blend of style, performance, and
+								camera. The Prisma F15 happens to be a brilliant blend of
+								elegance and functionality, and despite its premium design and
+								flagship features nature, it’s priced quite affordably.
+							</p>
+							<p class="card-text">
+								<span class="badge badge-pill badge-info">NewsRoom Story</span
+								><small class="text-muted">2020-02-20</small>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mb-3 w-100">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a
+							href="https://www.oppo.com/in/newsroom/stories/oppo-reno3-pro-perfect-photography-companion/"
+						>
+							<img
+								src="./images/news_room/Ranveer_Reno3Pro.png"
+								class="card-img"
+								alt="Ranveer_Reno3Pro"
+							/>
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h3 class="card-title">
+								Prisma Reno 3 Pro to launch on March 2nd 2020
+							</h3>
+							<p class="card-text">
+								Prisma Reno3 Pro promises to be the perfect photography
+								companion. The Reno3 Pro will debut the world’s first 44MP dual
+								punch hole camera setup and a versatile 64MP Zoom quad-camera
+								setup to capture clear images under any lighting conditions.
+							</p>
+							<p class="card-text">
+								<span class="badge badge-pill badge-info">NewsRoom Story</span
+								><small class="text-muted">2020-02-19</small>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mb-3 w-100">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a
+							href="https://www.oppo.com/in/newsroom/press/oppo-pubg-mobile-india-tour-a-smashing-success-team-revenge-esports-wins-inr-5000000/"
+						>
+							<img
+								src="./images/news_room/Pubg_Mobile.png"
+								class="card-img"
+								alt="Pubg_Mobile"
+							/>
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h3 class="card-title">
+								Prisma PUBG MOBILE India Tour, a Smashing Success
+							</h3>
+							<p class="card-text">
+								PUBG MOBILE is currently one of the most popular smartphone
+								games in India for millennials. Prisma’s partnership with PUBG
+								MOBILE is an ideal opportunity for the brand to highlight its
+								commitment and connection with the youth.
+							</p>
+							<p class="card-text">
+								<span class="badge badge-pill badge-info">NewsRoom Story</span
+								><small class="text-muted">2019-10-22</small>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mb-3 w-100">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a
+							href="https://www.oppo.com/in/newsroom/stories/the-first-impression-is-the-last-and-oppo-reno2-just-nailed-it-7310611/"
+						>
+							<img
+								src="./images/news_room/Reno2_Nailed_it.png"
+								class="card-img"
+								alt="Reno2_Nailed_it"
+							/>
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h3 class="card-title">
+								The first Impression is the last, And Prisma Reno2 just nailed
+								it!
+							</h3>
+							<p class="card-text">
+								The OPPO Reno2 also sports the Video Bokeh Effect to make you
+								stand out from the crowd in video with movie-like quality.The
+								OPPO Reno2 also brings back the most-loved feature of its
+								predecessor – the Shark Fin Rising camera that rises to give you
+								the perfect shot and auto-shuts when it detects a fall.
+							</p>
+							<p class="card-text">
+								<span class="badge badge-pill badge-info">NewsRoom Story</span
+								><small class="text-muted">2019-09-09</small>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mb-3 w-100">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a
+							href="https://www.oppo.com/in/newsroom/stories/new-oppo-reno-smartphone-to-launch-in-india/"
+						>
+							<img
+								src="./images/news_room/Reno.png"
+								class="card-img"
+								alt="Reno"
+							/>
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h3 class="card-title">
+								Prisma to launch new Reno smartphone in India
+							</h3>
+							<p class="card-text">
+								The upcoming smartphone in the Reno series will be launched in
+								India ahead of the global launch. The Prisma Reno duo had a
+								glass-sandwich design, unique shark-fin elevating rising camera,
+								a triple-camera module with a periscope-styled telephoto lens,
+								and a beefy battery.
+							</p>
+							<p class="card-text">
+								<span class="badge badge-pill badge-info">NewsRoom Story</span
+								><small class="text-muted">2019-08-10</small>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<!--Spacing Between NewsRoom and Three Phone Cards-->
+		<br />
+		<br />
 
-    <!--3 x 2 product rack-->
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="card">
-                    <img src="Images/m31.png" class="card-img-top" alt="Prisma M31">
-                    <div class="card-body">
-                        <h4 class="card-title">Prisma Enco M31</h4>
-                        <p class="card-text">Pure Bass on the Go</p>
-                        <a href="#" class="btn btn-primary">Buy Now in &#x20B9; 1,999</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="Images/power_bank.png" class="card-img-top" alt="Prisma Power Bank">
-                    <div class="card-body">
-                        <h4 class="card-title">Prisma Power Bank</h4>
-                        <p class="card-text">Advice you can bank on</p>
-                        <a href="#" class="btn btn-primary">Buy Now in &#x20B9; 3,699</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="Images/w11.png" class="card-img-top" alt="Prisma W11">
-                    <div class="card-body">
-                        <h4 class="card-title">Prisma Enco M31</h4>
-                        <p class="card-text">Music Never Drops</p>
-                        <a href="#" class="btn btn-primary">Buy Now in &#x20B9; 5,990</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="card">
-                    <img src="Images/w31.png" class="card-img-top" alt="Prisma W31">
-                    <div class="card-body">
-                        <h4 class="card-title">Prisma Enco W31</h4>
-                        <p class="card-text">Unleash the Power of Music</p>
-                        <a href="#" class="btn btn-primary">Buy Now in &#x20B9; 6,799</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="Images/w51.png" class="card-img-top" alt="Prisma W51">
-                    <div class="card-body">
-                        <h4 class="card-title">Prisma Enco W51</h4>
-                        <p class="card-text">A perfect pair for your smartphone</p>
-                        <a href="#" class="btn btn-primary">Buy Now in &#x20B9; 4,690</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="Images/watch.png" class="card-img-top" alt="Prisma watch">
-                    <div class="card-body">
-                        <h4 class="card-title">Prisma Watch</h4>
-                        <p class="card-text">The right time for life</p>
-                        <a href="#" class="btn btn-primary">Buy Now in &#x20B9; 2,980</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+		<!--Main Smartphone Cards-->
+		<div class="card-group w-100">
+			<div class="card card_1">
+				<a href="./prisma-f17-pro.html">
+					<img
+						src="./images/smartphones/Oppo_F17_Pro.png"
+						class="card-img"
+						alt="Prisma_F17_Pro"
+					/>
+				</a>
+				<div class="card-body">
+					<h2 class="card-title">Prisma F17 Pro</h2>
+					<p class="card-text">Flaunt It Your Way.</p>
+					<p class="card-text">
+						Irresistibly ergonomic. With a one-handed ergonomic grip, Prisma F17
+						packs the best F Series features in a thin and light design.
+					</p>
+					<p class="card-text">
+						<a href="./prisma-f17-pro.html"
+							><strong class="text-muted">Learn More</strong></a
+						>
+					</p>
+				</div>
+			</div>
+			<div class="card">
+				<a href="./prisma-vi5.html">
+					<img
+						src="./images/smartphones/Oppo_A12.png"
+						class="card-img"
+						alt="Prisma_A12"
+					/>
+				</a>
+				<div class="card-body">
+					<h2 class="card-title">Prisma Vi5</h2>
+					<p class="card-text">Bigger Storage, Better Performance</p>
+					<p class="card-text">
+						You can watch HD videos online for up to 17 hours, or play games for
+						up to 8 hours. Say goodbye to worry about running out of battery.
+					</p>
+					<p class="card-text">
+						<a href="./prisma-vi5.html"
+							><strong class="text-muted">Learn More</strong></a
+						>
+					</p>
+				</div>
+			</div>
+			<div class="card">
+				<a href="./prisma-mi2-pro.html">
+					<img
+						src="./images/smartphones/Oppo_F15.png"
+						class="card-img"
+						alt="Prisma_F15"
+					/>
+				</a>
+				<div class="card-body">
+					<h2 class="card-title">Prisma Mi2 Pro</h2>
+					<p class="card-text">48 MP AI Quadcam | VOOC Charge 3.0</p>
+					<p class="card-text">
+						Shiny Matte, the new black. Smooth to the touch, soft on the eyes.
+						Experience the new dimension of color called matte.
+					</p>
+					<p class="card-text">
+						<a href="./prisma-mi2-pro.html"
+							><strong class="text-muted">Learn More</strong></a
+						>
+					</p>
+				</div>
+			</div>
+		</div>
 
-    <!--Spacing between Product Rack and Newsroom-->
-    <br>
-    <br>
+		<!--spacing between three phone cards and footer-->
+		<br />
+		<br />
 
+		<!--footer-->
+		<div class="footer-basic">
+			<footer>
+				<div class="social">
+					<a href="https://www.facebook.com/OPPOCareIN"
+						><i class="fab fa-facebook"></i
+					></a>
+					<a href="https://twitter.com/oppomobileindia"
+						><i class="fab fa-twitter"></i
+					></a>
+					<a href="https://www.youtube.com/user/oppomobileindia"
+						><i class="fab fa-youtube"></i
+					></a>
+					<a href="https://www.instagram.com/oppomobileindia"
+						><i class="fab fa-instagram"></i
+					></a>
+				</div>
+				<ul class="list-inline">
+					<li class="list-inline-item"><a href="./index.html">Home</a></li>
+					<li class="list-inline-item">
+						<a href="./about-us.html">About Us</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="./contact-us.html">Contact Us</a>
+					</li>
+				</ul>
+				<p class="copyright">
+					Copyright &copy; 2020 Prisma. All rights reserved.
+				</p>
+			</footer>
+		</div>
 
-    <!--Horizontal NewsRoom-->
-    <div class="container">
-        <div class="card mb-3 w-100">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <a href="https://www.oppo.com/in/newsroom/stories/oppo-f15-price-in-india/">
-                        <img src="Images/Kartik_F15.png" class="card-img" alt="Kartik_F15">
-                    </a>
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h3 class="card-title">Prisma F15 Review</h3>
-                        <p class="card-text">Prisma F15 is a mesmerising blend of style, performance, and camera. The Prisma F15 happens to be a brilliant blend of elegance and functionality, and despite its premium design and flagship features nature, it’s priced quite affordably. </p>
-                        <p class="card-text"><span class="badge badge-pill badge-info">NewsRoom Story</span><small class="text-muted">2020-02-20</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card mb-3 w-100">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <a href="https://www.oppo.com/in/newsroom/stories/oppo-reno3-pro-perfect-photography-companion/">
-                        <img src="Images/Ranveer_Reno3Pro.png" class="card-img" alt="Ranveer_Reno3Pro">
-                    </a>
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h3 class="card-title">Prisma Reno 3 Pro to launch on March 2nd 2020</h3>
-                        <p class="card-text">Prisma Reno3 Pro promises to be the perfect photography companion. The Reno3 Pro will debut the world’s first 44MP dual punch hole camera setup and a versatile 64MP Zoom quad-camera setup to capture clear images under any lighting conditions.</p>
-                        <p class="card-text"><span class="badge badge-pill badge-info">NewsRoom Story</span><small class="text-muted">2020-02-19</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card mb-3 w-100">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <a href="https://www.oppo.com/in/newsroom/press/oppo-pubg-mobile-india-tour-a-smashing-success-team-revenge-esports-wins-inr-5000000/">
-                        <img src="Images/Pubg_Mobile.png" class="card-img" alt="Pubg_Mobile">
-                    </a>
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h3 class="card-title">Prisma PUBG MOBILE India Tour, a Smashing Success</h3>
-                        <p class="card-text">PUBG MOBILE is currently one of the most popular smartphone games in India for millennials. Prisma’s partnership with PUBG MOBILE is an ideal opportunity for the brand to highlight its commitment and connection with the youth.</p>
-                        <p class="card-text"><span class="badge badge-pill badge-info">NewsRoom Story</span><small class="text-muted">2019-10-22</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card mb-3 w-100">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <a href="https://www.oppo.com/in/newsroom/stories/the-first-impression-is-the-last-and-oppo-reno2-just-nailed-it-7310611/">
-                        <img src="Images/Reno2_Nailed_it.png" class="card-img" alt="Reno2_Nailed_it">
-                    </a>   
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h3 class="card-title">The first Impression is the last, And Prisma Reno2 just nailed it!</h3>
-                        <p class="card-text">The OPPO Reno2 also sports the Video Bokeh Effect to make you stand out from the crowd in video with movie-like quality.The OPPO Reno2 also brings back the most-loved feature of its predecessor – the Shark Fin Rising camera that rises to give you the perfect shot and auto-shuts when it detects a fall.</p>
-                        <p class="card-text"><span class="badge badge-pill badge-info">NewsRoom Story</span><small class="text-muted">2019-09-09</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card mb-3 w-100">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <a href="https://www.oppo.com/in/newsroom/stories/new-oppo-reno-smartphone-to-launch-in-india/">
-                        <img src="Images/Reno.png" class="card-img" alt="Reno">
-                    </a>
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h3 class="card-title">Prisma to launch new Reno smartphone in India</h3>
-                        <p class="card-text">The upcoming smartphone in the Reno series will be launched in India ahead of the global launch. The Prisma Reno duo had a glass-sandwich design, unique shark-fin elevating rising camera, a triple-camera module with a periscope-styled telephoto lens, and a beefy battery.</p>
-                        <p class="card-text"><span class="badge badge-pill badge-info">NewsRoom Story</span><small class="text-muted">2019-08-10</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Spacing Between NewsRoom and Three Phone Cards-->
-    <br>
-    <br>
-
-
-    <!--Main Smartphone Cards-->
-    <div class="card-group w-100">
-        <div class="card card_1">
-            <a href="page1.html">
-                <img src="Images/Oppo_F17_Pro.png" class="card-img" alt="Prisma_F17_Pro">
-            </a>
-            <div class="card-body">
-                <h2 class="card-title">Prisma F17 Pro</h2>
-                <p class="card-text">Flaunt It Your Way.</p>
-                <p class="card-text">Irresistibly ergonomic. With a one-handed ergonomic grip, Prisma F17 packs the best F Series features in a thin and light design.</p>
-                <p class="card-text"><a href="page1.html"><strong class="text-muted">Learn More</strong></a></p>
-            </div>
-        </div>
-        <div class="card">
-            <a href="page2.html">
-                <img src="Images/Oppo_A12.png" class="card-img" alt="Prisma_A12">
-            </a>
-            <div class="card-body">
-                <h2 class="card-title">Prisma Vi5</h2>
-                <p class="card-text">Bigger Storage, Better Performance</p>
-                <p class="card-text">You can watch HD videos online for up to 17 hours, or play games for up to 8 hours. Say goodbye to worry about running out of battery.</p>
-                <p class="card-text"><a href="page2.html"><strong class="text-muted">Learn More</strong></a></p>
-            </div>
-        </div>
-        <div class="card">
-            <a href="page3.html">
-                <img src="Images/Oppo_F15.png" class="card-img" alt="Prisma_Reno2_F">
-            </a>
-            <div class="card-body">
-                <h2 class="card-title">Prisma Mi2 Pro</h2>
-                <p class="card-text">48 MP AI Quadcam | VOOC Charge 3.0</p>
-                <p class="card-text">Shiny Matte, the new black. Smooth to the touch, soft on the eyes. Experience the new dimension of color called matte.</p>
-                <p class="card-text"><a href="page3.html"><strong class="text-muted">Learn More</strong></a></p>
-            </div>
-        </div>
-    </div>
-
-    <!--Spacing between Three Phone Cards and footer-->
-    <br>
-    <br>
-
-    <!--footer-->
-    <div class="footer-basic">
-        <footer>
-            <div class="social">
-                <a href="https://www.facebook.com/OPPOCareIN"><i class="fab fa-facebook"></i></a>
-                <a href="https://twitter.com/oppomobileindia"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.youtube.com/user/oppomobileindia"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/oppomobileindia"><i class="fab fa-instagram"></i></a>
-            </div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="index.html">Home</a></li>
-                <li class="list-inline-item">
-                    <a href="about-us.html">About Us</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="contact-us.html">Contact Us</a>
-                </li>
-            </ul>
-            <p class="copyright">Copyright &copy; 2020 Prisma</p>
-        </footer>
-    </div>
-
-    
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>

@@ -4,7 +4,6 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" type="text/css" href="./css/header.css" />
-		<link rel="stylesheet" type="text/css" href="./css/contact-us.css" />
 		<link rel="stylesheet" type="text/css" href="./css/footer.css" />
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 		<!-- Bootstrap CSS -->
@@ -19,39 +18,7 @@
 			href="./images/logo/apple-touch-icon-76x76-precomposed.png"
 			type="image/icon type"
 		/>
-		<title>Contact Us | Prisma</title>
-
-		<!--javascript alert-->
-		<script>
-			function show_alert() {
-				var name = document.myform.txtName.value;
-				var email = document.myform.txtEmail.value;
-				var phn_no = document.myform.txtPhone.value;
-				var msg = document.myform.txtMsg.value;
-
-				if (name == null || name == "") {
-					alert("Please! Enter Your Name...");
-					return false;
-				} else if (email == null || email == "") {
-					alert("Please! Enter Your Email...");
-					return false;
-				} else if (phn_no == null || phn_no == "") {
-					alert("Please! Enter Your Phone Number...");
-					return false;
-				} else if (msg == null || msg == "") {
-					alert("Please! Enter Your Message...");
-					return false;
-				} else {
-					alert(
-						"Thank You for contacting Prisma! \n We Received your Message. We'll contact you as soon as possible."
-					);
-				}
-				//page location after sending message
-				window.location = "#";
-				//refresh page after sending message
-				window.location.reload();
-			}
-		</script>
+		<title>Prisma Mi2 Pro</title>
 	</head>
 	<body>
 		<nav class="navbar navbar-dark bg-dark">
@@ -126,68 +93,6 @@
 			</div>
 		</nav>
 
-		<!--view frame-->
-		<div class="container contact-form">
-			<!--contact us icon-->
-			<div class="contact-image">
-				<img src="./images/logo/email (1).png" alt="rocket_contact" />
-			</div>
-			<!--contact us form-->
-			<form name="myform" method="post">
-				<h3>Drop Us a Message</h3>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="form-group">
-							<input
-								type="text"
-								name="txtName"
-								class="form-control"
-								placeholder="Your Name *"
-								value=""
-							/>
-						</div>
-						<div class="form-group">
-							<input
-								type="text"
-								name="txtEmail"
-								class="form-control"
-								placeholder="Your Email *"
-								value=""
-							/>
-						</div>
-						<div class="form-group">
-							<input
-								type="text"
-								name="txtPhone"
-								class="form-control"
-								placeholder="Your Phone Number *"
-								value=""
-							/>
-						</div>
-						<div>
-							<input
-								type="button"
-								name="btnSubmit"
-								class="btnContact"
-								value="Send Message"
-								onclick="show_alert()"
-							/>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<textarea
-								name="txtMsg"
-								class="form-control usermsg"
-								placeholder="Your Message *"
-							></textarea>
-						</div>
-					</div>
-				</div>
-			</form>
-		</div>
-
-		<!--footer-->
 		<div class="footer-basic">
 			<footer>
 				<div class="social">

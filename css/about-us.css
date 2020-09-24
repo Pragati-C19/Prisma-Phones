@@ -1,0 +1,103 @@
+body,
+html {
+	height: 100%;
+	margin: 0;
+	font: 400 15px/1.8 "Lato", sans-serif;
+	color: #777;
+}
+
+/* Parallax Images */
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+	position: relative;
+	opacity: 0.7;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bgimg-1 {
+	background-image: url("../images/parallax_imgs/company_culture_vision.png");
+	min-height: 100%;
+}
+
+.bgimg-2 {
+	background-image: url("../images/parallax_imgs/about-overview.png");
+	min-height: 400px;
+}
+
+.bgimg-3 {
+	background-image: url("../images/parallax_imgs/tech-vooc-web.png");
+	min-height: 400px;
+}
+
+/* Text on Parallax Images */
+.caption {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+
+.caption span.border {
+	background-color: rgb(11, 12, 12);
+	color: #fff;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
+.bgimg-2 .caption span.border,
+.bgimg-3 .caption span.border {
+	background-color: transparent;
+	font-size: 25px;
+	color: #f7f7f7;
+}
+
+/* text on Parallax Paragraph */
+.Parallax_1 {
+	color: #777;
+	background-color: white;
+	text-align: center;
+	padding: 50px 80px;
+}
+
+.Parallax_2 {
+	position: relative;
+	color: #ddd;
+	background-color: #282e34;
+	text-align: center;
+	padding: 50px 80px;
+}
+
+.Parallax_2 > h3 {
+	color: #fff;
+}
+
+.Parallax_3 {
+	position: relative;
+	color: #777;
+	background-color: white;
+	text-align: center;
+	padding: 50px 80px;
+}
+
+/* heading of Paragraph */
+h3 {
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font: 20px "Lato", sans-serif;
+	color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+	.bgimg-1,
+	.bgimg-2,
+	.bgimg-3 {
+		background-attachment: scroll;
+	}
+}

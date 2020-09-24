@@ -1,0 +1,17 @@
+/* navbar */
+link {
+	border-radius: 30%;
+}
+.d-inline-block {
+	width: 40px;
+	height: 40px;
+}
+.logo {
+	border-radius: 30%;
+}
+.navbar .navbar-brand {
+	font-weight: 600;
+	color: inherit;
+	font-family: cursive, sans-serif;
+	font-size: 25px;
+}
