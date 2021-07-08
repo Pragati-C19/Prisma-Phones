@@ -7,7 +7,7 @@ This is a short (2 weeks) Frontend Project in that I Learn about bootstrap and u
 
 On this website, you only able to see how the front works and the graphics we can design. Here I have created some logos using designing apps like Figma, paint.net, canvas. This is a basic and simple website. The Prisma Phones website allows the user to purchase smartphones and other small products like headphones, chargers, smartwatches, power banks, etc. The homepage displays some of the bestselling smartphones, some additional products, newsroom. Clicking on the product on the home page you can directly go to the respective page where you can see all details of the products especially smartphones. On the navbar also user can see Prisma Smartphones. 
 
-Live Link:  https://pragati-c19.github.io/Prisma-Phones/
+Live Link:   https://pragati-c19.github.io/Prisma-Phones/
 
 
 ## Tech stack used :
