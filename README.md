@@ -12,7 +12,6 @@ Live Link:  [pragati-c19.github.io/prisma-phones/](http://pragati-c19.github.io/
 
 
 ## Tech stack used :
-<hr>
 <br>
 
 * `navbar-dark` for black color navbar 
@@ -49,22 +48,27 @@ Live Link:  [pragati-c19.github.io/prisma-phones/](http://pragati-c19.github.io/
 
 <ol> 
 <li> Navbar </li>
+<br>
 
-![Navbar]https://github.com/Pragati-C19/Prisma-Phones/blob/master/screenshorts/navbar.jpg?raw=true)
+![Navbar](https://github.com/Pragati-C19/Prisma-Phones/blob/master/screenshorts/navbar.jpg?raw=true)
 
 <li> Newsroom </li>
+<br>
 
 ![Newsroom](https://github.com/Pragati-C19/Prisma-Phones/blob/master/screenshorts/newsroom.jpg?raw=true)
 
 <li> Parallax Effect </li>
+<br>
 
 ![Parallax](https://github.com/Pragati-C19/Prisma-Phones/blob/master/screenshorts/parallax.jpg?raw=true)
 
 <li> Product Cards </li>
+<br>
 
 ![Product Cards](https://github.com/Pragati-C19/Prisma-Phones/blob/master/screenshorts/product_cards.jpg?raw=true)
 
 <li> Smartphone Cards </li>
+<br>
 
 ![Smartphone Cards](https://github.com/Pragati-C19/Prisma-Phones/blob/master/screenshorts/smartphone_cards.jpg?raw=true)
 
